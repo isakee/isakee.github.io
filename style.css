@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    text-shadow: black;
+    text-shadow: 5px;
+}
+
+header.fade-out{
+    opacity: 50%;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+
+.logo{
+    font-size: 50px;
+    color: #ededed;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
+    }
+
+   
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: 1s;
+    text-shadow: 0px 0px 1px black;
+ 
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar a.active {
+    color:greenyellow;
+}
+
+.home {
+    display: flex;
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3540039.jpg') no-repeat;
+    background-size:cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10%;
+ 
+}
+
+.home-content{
+    max-width: 650px;
+}
+
+.courses {
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2036902.jpg&f=1&nofb=1&ipt=082abb88c24f25e30d12b44f999ce096a13176360eed6ad4f82afb5a147cca37&ipo=images') no-repeat;
+    background-size:cover;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 10% 10%;
+
+}
+
+.courses-container {
+    padding-block-start: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.courses-content{
+
+    position: flex;
+    padding: 10px 35px;
+    max-width: 40%;
+    background-color:rgb(24, 23, 23); 
+    border: 2px solid #84c944;
+    border-color: #84c944;
+    border-radius: 25px;
+    justify-content:space-around;
+    margin-left: 2%;
+    
+}
+
+
+.courses h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 1 5 5 black;
+    z-index: 2;
+    
+}
+
+
+
+.courses-head {
+    position:flex;
+ margin-bottom: 20px;
+ width: 100%;
+ justify-content: space-between;
+ text-shadow: 1 1 5 black
+
+}
+
+
+.courses h4 {
+    padding: 0 10%;
+    text-align: center;
+    color: #84c944;
+    justify-content: center;
+    font-size: 25px;
+}
+
+
+
+.home-content h1{
+    padding: 10% 10%;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.2;
+    justify-content: center;
+    vertical-align:top;
+
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #84c944;
+}
+
+.h4 {
+   font-size: 15px;
+   color: #84c944 
+}
+
+.home-content p {
+    font-size: 15px;
+    margin: 35px 0 30px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #84c944;
+    border: 2px solid #84c944;
+    padding-left: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color:#84c944
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #253813;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #84c944
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #84c944
+} 
+
+.btn-box a:nth-child(2):before{
+    background: #253813;
+}
+
+.home-sci{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 40px;
+    width: 170px;
+    background: transparent;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #84c944;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #84c944;
+    text-decoration: none;
+
+}
+
+.coverletter {
+    display: flex;
+    background: url('https://wallpapercave.com/dwp1x/wp3491728.jpg');
+    background-size:cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.coverletter-content {
+    position: absolute;
+    padding: 10px 10px;
+    max-width: 40%;
+    max-height:fit-content;
+    background-color:rgb(24, 23, 23); 
+    border: 2px solid #84c944;
+    border-color: #84c944;
+    border-radius: 25px;
+    justify-content:space-around;
+    margin-left: 2%;
+    margin-top: 10%;
+}
